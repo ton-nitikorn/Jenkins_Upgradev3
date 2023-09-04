@@ -29,7 +29,7 @@ pipeline {
             steps{
                 sh "docker container stop webapp"
                 sh "docker container rm webapp"
-                sh "docker container run -d -p 9090:8080 -name webapp tomcatsamplewebapp"
+                sh "docker container run -d -p 9090:8080 --name webapp tomcatsamplewebapp"
 
             }
             
